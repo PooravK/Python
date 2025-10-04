@@ -8,7 +8,7 @@ for fruit in fruits:
     else:
         print("Not apples")
 
-# Another way was to iterate through each index
+# Another way was to iterate through each index by counting the range
 
 # Or:
 
