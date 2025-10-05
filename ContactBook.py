@@ -17,7 +17,10 @@ while(True):
     elif (final_input == 2):
         name = input("\nEnter a name: ")
 
-        del contacts[name.lower()]
+        if name.lower() in contacts:
+            del contacts[name.lower()]
+        else:
+            print("\nContact not found!")
         continue
     elif (final_input == 3):
         print("\n")
@@ -28,7 +31,10 @@ while(True):
     elif (final_input == 4):
         name = input("\nEnter a name: ")
 
-        print("\nContact:", contacts[name])
+        if name.lower() in contacts:
+            print("\nContact:", contacts[name])
+        else:
+            print("Contact not found!")
         continue
     elif (final_input == 5):
         break
