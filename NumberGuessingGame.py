@@ -1,0 +1,22 @@
+import random
+
+random_num = random.randint(0, 100)
+count = 0
+
+while (True):
+    user_input = input("Enter a number: ")
+    try:
+        inp = int(user_input)
+    except:
+        print("Invalid input. Please enter an integer!")
+        continue
+    if (inp != random_num):
+        count += 1
+        if (inp > random_num):
+            print("You guessed higher!")
+        else:
+            print("You guseed lower!")
+    else:
+        count += 1
+        print("Correct! You guessed in", count, "turns.")
+        break

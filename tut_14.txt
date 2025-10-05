@@ -1,2 +1,0 @@
-Python
-I am learning how to write to a file

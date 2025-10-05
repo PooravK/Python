@@ -20,4 +20,4 @@ class number():
 num = number(23)
 print(num) # Shows the location of object in the memory
 
-num.display(num.var)
+num.display(num.var) # Takes one parameter of x
