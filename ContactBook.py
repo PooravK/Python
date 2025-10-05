@@ -7,7 +7,7 @@ except FileNotFoundError:
     contacts = {}
 
 while(True):
-    user_inp = input("\n ---------- CONTACT LIST ---------- \nWhat action do you want to perform?\n1 - Add item\n2 - Remove item\n3 - View full list\n4 - Search a name\n5 - Exit\nEnter from 1-4: ")
+    user_inp = input("\n ---------- CONTACT LIST ---------- \nWhat action do you want to perform?\n1 - Add item\n2 - Remove item\n3 - View full list\n4 - Search a name\n5 - Exit\nEnter from 1-5: ")
     try:
         final_input = int(user_inp)
     except ValueError:
