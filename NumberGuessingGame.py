@@ -7,7 +7,7 @@ while (True):
     user_input = input("Enter a number: ")
     try:
         inp = int(user_input)
-    except:
+    except ValueError:
         print("Invalid input. Please enter an integer!")
         continue
     if (inp != random_num):
