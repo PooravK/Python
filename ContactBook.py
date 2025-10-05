@@ -1,4 +1,10 @@
-contacts = {}
+import json
+
+try:
+    with open("ContactList.json", "r") as f:
+        contacts = json.load(f)
+except FileNotFoundError:
+    contacts = {}
 
 while(True):
     user_inp = input("\n ---------- CONTACT LIST ---------- \nWhat action do you want to perform?\n1 - Add item\n2 - Remove item\n3 - View full list\n4 - Search a name\n5 - Exit\nEnter from 1-4: ")
@@ -41,3 +47,6 @@ while(True):
     else:
         print("Select from 1-5 only!")
         continue
+
+with open("ContactList.json", "w") as f:
+    json.dump(contacts, f)
