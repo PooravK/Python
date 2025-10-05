@@ -52,3 +52,9 @@ while(True):
 
 with open("ContactList.json", "w") as f: # To update the memory file with new list of dictionary
     json.dump(contacts, f)
+
+
+# Project outcomes:
+# Understood external file handeling: Reading and Writing and how to use this as memory system
+# Understood how to manipulate dictionaries
+# Understood how to use if in statements to check validity of input

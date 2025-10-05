@@ -20,3 +20,8 @@ while (True):
         count += 1
         print("Correct! You guessed in", count, "turns.")
         break
+
+# Project outcomes:
+# Understood forever loops to run applications
+# Understood modular programming
+# Understood using try and except for error handeling
