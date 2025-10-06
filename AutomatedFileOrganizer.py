@@ -18,3 +18,8 @@ for item_name in items:
         print(item_name, "is a file")
     else:
         print(item_name, "is a folder")
+
+# Project outcomes:
+# Understood modular programming
+# Understood the concept of raw strings
+# Understood importing system files into program
